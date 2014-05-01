@@ -1,2 +1,80 @@
+body {
+  font-size: 12px;
+  font-family: Helvetica, sans-serif; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 0 0 1.5em 0; }
+
 h1 {
-  color: green; }
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  margin-top: 0.6em;
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.5em;
+  margin-top: 0.75em;
+  margin-bottom: 0; }
+
+h3 {
+  font-size: 1.8333rem;
+  line-height: 1.6364em;
+  margin-top: 0.8182em;
+  margin-bottom: 0; }
+
+h4 {
+  font-size: 1.6667rem;
+  line-height: 1.8em;
+  margin-top: 0.9em;
+  margin-bottom: 0; }
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 1em;
+  margin-top: 1em;
+  margin-bottom: 0; }
+
+.bigger {
+  font-size: 1.3333rem;
+  line-height: 1.125em;
+  margin-top: 1.125em;
+  margin-bottom: 0; }
+
+header {
+  background-color: #333333;
+  padding: 10px; }
+  header h1 {
+    color: white;
+    margin: 0;
+    font-weight: normal; }
+
+.hero {
+  background: url(/images/big-header.jpg) no-repeat bottom left;
+  background-size: cover;
+  height: 500px;
+  width: 100%; }
+  .hero h2 {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding-top: 250px;
+    font-size: 2.8rem; }
+
+body {
+  color: #333333; }
+
+section {
+  padding: 3em; }
+  section.intro {
+    width: 45em; }
+    section.intro h2 {
+      line-height: 1.2em; }
+    section.intro p {
+      color: #555555; }
+
+footer {
+  background: #333333;
+  height: 500px; }

@@ -13,8 +13,12 @@ angular.module('little-ranger').run(['$templateCache', function($templateCache) 
     "      <link rel=\"stylesheet\" href=\"stylesheets/main.css\"></link>\n" +
     "      <script src=\"vendor/modernizr/modernizr.js\"></script>\n" +
     "  </head>\n" +
-    "  <body>\n" +
-    "    <h1>Little Ranger</h1>\n" +
+    "  <body ng-app=\"little-ranger\">\n" +
+    "\n" +
+    "    <ui-view></ui-view>\n" +
+    "\n" +
+    "    <!-- <footer>links</footer> -->\n" +
+    "\n" +
     "  </body>\n" +
     "  <script src=\"vendor/angular/angular.js\"></script>\n" +
     "  <script src=\"vendor/angular-ui-router/angular-ui-router.js\"></script>\n" +
@@ -22,6 +26,28 @@ angular.module('little-ranger').run(['$templateCache', function($templateCache) 
     "  <script src=\"javascript/main.js\"></script>\n" +
     "  <script src=\"javascript/templates.js\"></script>\n" +
     "</html>\n"
+  );
+
+
+  $templateCache.put('app/views/pages/home.html',
+    "<header>\n" +
+    "  <h1>Little Ranger</h1>\n" +
+    "</header>\n" +
+    "\n" +
+    "<div class=\"hero\">\n" +
+    "  <h2>Explore. Collect. Discover.\n" +
+    "</div>\n" +
+    "\n" +
+    "<section class=\"intro\">\n" +
+    "  <a ui-sref=\"ranger\">Ranger</a>\n" +
+    "  <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry as opposed to using 'Content here. </h2>\n" +
+    "  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here</p>\n" +
+    "</section>\n"
+  );
+
+
+  $templateCache.put('app/views/pages/ranger.html',
+    "<h1>Ranger</h1>"
   );
 
 }]);
